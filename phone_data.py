@@ -1,6 +1,7 @@
 import phonenumbers
 from phonenumbers import carrier, geocoder, timezone
 
+# e.g. +522223391262
 mobileNumber = input("Enter mobile number with country code: ")
 mobileNumber = phonenumbers.parse(mobileNumber)
 
@@ -20,4 +21,4 @@ print("Valid Mobile Number: ", phonenumbers.is_valid_number(mobileNumber))
 print("Checking possibility of Number: ",
 phonenumbers.is_possible_number(mobileNumber))
 
-input()
+# input()
